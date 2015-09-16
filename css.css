@@ -51,11 +51,27 @@ body {
 */
 
 
-/* Fonts
-** =====
+/* Import Fonts from Google
+** ========================
 ** google fonts: https://www.google.com/fonts
 */
 
+
+/* Download Fonts
+** ==============
+** url: e.g. http://www.1001freefonts.com/
+** usage:
+
+@font-face {
+	font-family: nice_font;
+	src: url('nice_font.ttf'); // .ttf is the font file
+}
+
+p.custom_font{
+	font-family: nice_font; /* don't use .ttf */
+}
+
+*/
 
 /* Layout
 ** ======

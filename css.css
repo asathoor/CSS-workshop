@@ -1,0 +1,105 @@
+/* file: css.css
+** author: Per Thykjaer Jensen
+
+< Beginning Cascading Stylesheets >
+ ---------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+** With heavy inspiration from: http://code-tricks.com/simple-css-drop-down-menu/
+*/
+
+/* meyer reset and css info
+** http://meyerweb.com/eric/css/
+*/
+
+/* Reset */
+/* @import url(meyerReset.css); */
+/* Imports may slow down the site. Alternative: copy directly to the css file. */
+
+/* A bit of color */
+body {
+	background: black;
+	color:greenyellow;
+}
+
+/* CSS: tag, id, class
+** ===================
+**
+** p { ... styles go here ... } = how to style any tag
+** .myClass = class selector
+** #myId = id selector
+*/
+
+/* Graphic Style
+** =============
+**
+** Raymond Chandler novel cover: https://niteowljr.files.wordpress.com/2012/11/farewellmy.jpg
+** Use the colors from a novel cover as inspiration.
+** Tool: find a colorpicker plugin. Use the colors from the image.
+** Mood: Choose relevant colors to create the mood, feeling or tone of voice.
+*/
+
+
+/* Background Images
+** =================
+**
+** tip: background: url();
+*/
+
+
+/* Fonts
+** =====
+** google fonts: https://www.google.com/fonts
+*/
+
+
+/* Layout
+** ======
+**
+** Width, position etc.
+** Also: media screen, print, etc.
+*/
+
+/* Drop Down Menu
+** ==============
+**
+** pro: nice feel. Cool feature.
+** con: responsive design (hover not possible). Finding stuff may be difficult.
+*/
+
+/*Initialize*/
+ul#menu, ul#menu ul.sub-menu {
+    padding:0;
+    margin: 0;
+}
+ul#menu li, ul#menu ul.sub-menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+/*Link Appearance*/
+ul#menu li a, ul#menu li ul.sub-menu li a {
+    text-decoration: none;
+    color: #fff;
+    background: #666;
+    padding: 5px;
+    display:inline-block;
+}
+/*Make the parent of sub-menu relative*/
+ul#menu li {
+    position: relative;
+}
+/*sub menu*/
+ul#menu li ul.sub-menu {
+    display:none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100px;
+}
+ul#menu li:hover ul.sub-menu {
+    display:block;
+}
